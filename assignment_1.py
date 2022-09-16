@@ -13,7 +13,7 @@ Original file is located at
 
 s = "Hi there Sam!"
 
-s="Hi there Sam!"
+s = "Hi there Sam!"
 t=s.split()
 print(t)
 
@@ -53,9 +53,24 @@ array=np.ones(10)
 print("An array of 10 ones:")
 print(array)
 
+import numpy as np
+array=np.zeros(10)
+print("An array of 10 zeros:")
+print(array)
+array=np.ones(10)*5
+print("An array of 10 ones:")
+print(array)
+
+
+
 
 
 """## 5. Create an array of all the even integers from 20 to 35"""
+
+import numpy as np
+array=np.arange(20,35,2)
+print("Array of all the even integers from 20 to 35")
+print(array)
 
 import numpy as np
 array=np.arange(20,35,2)
@@ -74,7 +89,7 @@ print(x)
 
 import numpy as np
 a = np.array([1,2,3])
-b =np.array([4,5,6])
+b = np.array([4,5,6])
 np.concatenate((a,b))
 
 """# Pandas
@@ -83,13 +98,13 @@ np.concatenate((a,b))
 """
 
 import pandas as pd
+df = pd.DataFrame()
+print(df)
 
 import pandas as pd
 lst=[['Geek',25],['is',30],['for',26],['Geekforgeeks',22]]
 df=pd.DataFrame(lst,columns=['tag','number'])
 print(df)
-
-
 
 """## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"""
 
