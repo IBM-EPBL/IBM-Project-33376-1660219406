@@ -13,7 +13,7 @@ Original file is located at
 
 s = "Hi there Sam!"
 
-s = "Hi there Sam!"
+s="Hi there sam!"
 t=s.split()
 print(t)
 
@@ -25,9 +25,9 @@ print(t)
 planet = "Earth"
 diameter = 12742
 
-planet = "Earth"
-diameter = 12742
-print("The diameter of {} is {} kilometers.".format(planet,diameter))
+planet="Earth"
+diameter=12748
+print("the diameter of{}is{}kilometers,".format(planet,diameter))
 
 """## 3. In this nest dictionary grab the word "hello"
 """
@@ -61,16 +61,7 @@ array=np.ones(10)*5
 print("An array of 10 ones:")
 print(array)
 
-
-
-
-
 """## 5. Create an array of all the even integers from 20 to 35"""
-
-import numpy as np
-array=np.arange(20,35,2)
-print("Array of all the even integers from 20 to 35")
-print(array)
 
 import numpy as np
 array=np.arange(20,35,2)
@@ -88,9 +79,9 @@ print(x)
 """
 
 import numpy as np
-a = np.array([1,2,3])
-b = np.array([4,5,6])
-np.concatenate((a,b))
+a=np.array([1,2,3])
+b=np.array([4,5,6])
+np.concatenate([a,b])
 
 """# Pandas
 
@@ -98,22 +89,17 @@ np.concatenate((a,b))
 """
 
 import pandas as pd
-df = pd.DataFrame()
-print(df)
 
 import pandas as pd
-lst=[['Geek',25],['is',30],['for',26],['Geekforgeeks',22]]
-df=pd.DataFrame(lst,columns=['tag','number'])
+df =pd.DataFrame()
 print(df)
 
 """## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"""
 
-import datetime
 import pandas as pd
-test_date = datetime.datetime.strptime("01-01-2022", "%d-%m-%Y")
-K = 41
-date_generated = pd.date_range(test_date, periods=K)
-print(date_generated.strftime("%d-%m-%Y"))
+lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
+df=pd.DataFrame(lists)
+print(df)
 
 """## 10. Create 2D list to DataFrame
 
@@ -124,7 +110,10 @@ lists = [[1, 'aaa', 22],
 
 lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
 
-import pandas as pd
-lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
-df=pd.DataFrame(lists)
-print(df)
+import numpy as np
+array=np.zeros(10)
+print("An array of 10 zeros:")
+print(array)
+array=np.ones(10)*5
+print("An array of 10 ones:")
+print(array)
